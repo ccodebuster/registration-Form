@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Registration form</h1>
+        <p id="description" class="description text-center" >Thanks for registration</p>
+      </header>
+      <form id="survey-form" class="form">
+        <div class="form-details">
+          <label for="name" id="name-label" >Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+        </div>
+        <div class="form-details">
+          <label for="email" id="email-label" >Email</label>
+          <input type="text" id="email" class="form-control" placeholder="Enter Your Email">
+        </div>
+        <div class="form-details">
+          <label for="age" id="number-label">Age(optional)</label>
+          <input type="number" id="age" class="form-control" min="12" max="99" placeholder="Enter Age">
+        </div>
+        <div class="form-details">
+          <label for="dropdown" >Country</label>
+          <select id="dropdown" class="form-control">
+            <option value="">Select Your Country</option>
+            <option value="male">Uk</option>
+            <option value="female">USA</option>
+          </select>
+        </div>
+        <div class="form-details" >
+          <p>Select Your Gender</p>
+          <label for="gender"><input name="gender" type="radio" id="gender" value="male" class="input-radio" >male</label>
+          <label for="gender"><input name="gender" type="radio" id="gender" value="female"  class="input-radio">female</label>
+          
+        </div>
+        <div class="form-details">
+          <p>Which course you are intrested in</p>
+          <label for="course"><input name="course" type="checkbox" id="course">commerce</label>
+          <label for="course"><input name="course" type="checkbox" id="course">Science</label>
+          <label for="course"><input name="course" type="checkbox" id="course">Business</label>
+        </div>
+        <div class="form-details">
+          <p>your Suggestion</p>
+          <textarea name="comment" id="comment" placeholder="Enter your comments" rows="5", width="100%"></textarea>
+        </div>
+        <div class="form-details">
+          <button type="submit">Submit</button>
+        </div>
+      
+
+      </form>
+    </div>
+
+  </body>
+</html>
